@@ -1,5 +1,4 @@
 var latestActivity;
-var doSomething;
 
 doSomething();
 
@@ -9,10 +8,8 @@ function doSomething() {
     //latestActivit = 10;
 }
 
-function run(){
+export function run(){
     latestActivity = 10;
 
     console.log("run1");
 }
-
-exports.run = run;

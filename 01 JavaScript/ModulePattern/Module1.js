@@ -1,5 +1,18 @@
 var myApp = myApp || {};
 
+function init(){
+    if(typeof JSON == "undefined") {
+        window.JSON = {
+            parse: function(){
+
+            },
+            stringify: function(){
+                
+            }
+        };
+    }
+}
+
 myApp.module1 = (function($) {
     "use strict";
 

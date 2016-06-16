@@ -5,8 +5,6 @@ function doSomething() {
     console.log("Module2");
 }
 
-function run(){
+export function run(){
     console.log("run2");
 }
-
-exports.run = run;
