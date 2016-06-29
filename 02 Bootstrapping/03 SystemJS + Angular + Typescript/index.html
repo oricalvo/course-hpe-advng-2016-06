@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    {{XXX}}
+
+    <div ng-controller="HomeCtrl">
+        <span ng-cloak>{{message}}</span>
+
+        <button ng-click="clean()">Clean</button>
+    </div>
+
+    <script src="lib/system.src.js"></script>
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+        });
+        System.import("app/main");
+    </script>
+</body>
+</html>

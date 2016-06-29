@@ -1,5 +1,5 @@
 var module = angular.module("myApp", []);
 
-module.run(function($rootScope) {
+module.run(["$rootScope", function($rootScope) {
     $rootScope.showCtrl = true;
-});
+}]);

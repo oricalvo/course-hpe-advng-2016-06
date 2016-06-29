@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button ng-click="show=!show">Toggle</button>
+    <button ng-click="$broadcast('blabla')">Raise</button>
+
+    <div ng-if="show" ng-controller="HomeCtrl">
+        <span ng-cloak>{{message}}</span>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>

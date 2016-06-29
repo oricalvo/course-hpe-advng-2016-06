@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div ng-controller="HomeCtrl as ctrl">
+        <span ng-cloak>{{ctrl.message}}</span>
+
+        <button ng-click="ctrl.sayHello()">Say Hello</button>
+
+        <div ng-controller="SecondCtrl as ctrl">
+            {{ctrl.yyy}}
+        </div>
+    </div>
+
+    <script src="lib/system.src.js"></script>
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+        });
+        System.import("app/main");
+    </script>
+</body>
+</html>

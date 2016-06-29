@@ -1,5 +1,7 @@
 (function() {
     "use strict";
+    
+    //console.error("test");
 
     function HomeCtrl($scope, $rootScope, $element) {
         console.log("HomeCtrl");
@@ -21,5 +23,10 @@
         });
     }
 
-    angular.module("myApp").controller("HomeCtrl", HomeCtrl);
+    angular.module("myApp").controller("HomeCtrl", [
+        "$scope", 
+        "$rootScope", 
+        "$element",
+        HomeCtrl
+    ]);
 })();
