@@ -1,0 +1,14 @@
+<h1>Home</h1>
+
+<clock #clock1
+       model="$ctrl.model"
+       format="$ctrl.clockFormat"
+       on-tick="$ctrl.onClockTick($event)"></clock>
+<button ng-click="$ctrl.change()">Change</button>
+<button ng-click="$ctrl.stop()">Stop</button>
+
+<clock #clock2></clock>
+<button ng-click="$ctrl.clock2.start()">Start</button>
+<button ng-click="$ctrl.clock2.stop()">Stop</button>
+
+<button ng-click="$ctrl.syncClocks()">Synchronize</button>

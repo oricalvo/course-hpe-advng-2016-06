@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <home></home>
+
+    <home></home>
+
+    <script src="lib/system.src.js"></script>
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+            map: {
+                text: "lib/system.text.js",
+                css: "lib/system.css.js"
+            }
+        });
+        System.import("app/main");
+    </script>
+</body>
+</html>
